@@ -31,7 +31,7 @@ import org.dom4j.io.SAXReader;
 public class GameData implements Serializable, ManagedObject{
     
     private static final Logger LOG = Logger.getLogger(GameData.class.getName());
-
+    private static final String abc = "中华人民共和国";
     public static final String QUERY_ALL_DEPARTMENT = "SELECT fid, TRIM(fnumber) fnumber, TRIM(fname) fname FROM t_department ";
     public static final String QUERY_ALL_DIVISION = "SELECT fid, fdepartmentid, TRIM(fname) fname FROM t_division ";
     public static final String QUERY_ALL_BRANCH = "SELECT fid, fdivisionid, TRIM(fname) fname FROM t_branch ";
